@@ -1,0 +1,3 @@
+I decided to use recursion to recursively visit all subdirectories available within the current path and build my paths output list incrementally, as files ending with the suffix we're searching for are discovered.
+
+The time complexity is O(n * depth), where n is the number of items (files and subdirectories) in the current directoy being examined and depth is the number of subdirectories (or levels) in our original path. The space complexity is O(depth), where depth is the number of subdirectories (or levels) in our original path.

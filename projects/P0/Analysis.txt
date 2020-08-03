@@ -1,0 +1,6 @@
+Filename -> Worst-Case Run Time Analysis
+Task0.py -> O(1)
+Task1.py -> O(N + M), where N is the length of texts, M is the length of calls. We can simplify to O(N)
+Task2.py -> O(N + M), where N is the length of calls, M is the length of time_on_calls. We can simplify to O(N).
+Task3.py -> O(N + M + P log P), where N is the length of calls, M is the length of unique_codes, P is the length of output. We can simplify to O(P log P)
+Task4.py -> O(2N + M + P + Q log Q), where N is the length of calls, M is the length of texts, P is the length of potential_telemarketers, Q is the length of output. We can simplify to O(Q log Q)
