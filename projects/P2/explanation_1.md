@@ -1,2 +1,1 @@
-Write up an explanation for each question in a single separate text file, PDF or markdown called "explanation_1.md".
-Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning behind decisions made in the code. For example, why did you use that data structure? You also need to explain the efficiency (time and space) of your solution.
+For this problem I used a variation of binary search to achieve O(log(n)) time complexity and O(1) space complexity.
