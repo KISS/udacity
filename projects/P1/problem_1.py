@@ -25,6 +25,10 @@ class LRU_Cache(object):
       return -1
 
   def set(self, key, value):
+    # Edge case where LRU is initialized with a capacity of 0 less.
+    if self.capacity <= 0:
+      return
+
     # Set the value if the key is not present in the cache. If the cache is at capacity remove the oldest item.
     if key not in self.cache:
         if self.is_full():
@@ -105,20 +109,36 @@ class LRU_Cache(object):
       print(curr.val)
       curr = curr.next
 
-our_cache = LRU_Cache(5)
+# Test Case 1: Cache Capacity 5
+cache_one = LRU_Cache(5)
 
-print("get(1): ", our_cache.get(1))      # returns -1 because 1 is not present in the cache, the cache is empty
+print("get(1): ", cache_one.get(1))      # returns -1 because 1 is not present in the cache, the cache is empty
 
-our_cache.set(3, 3)
-our_cache.set(1, 1)
-our_cache.set(2, 2)
-our_cache.set(4, 4)
+cache_one.set(3, 3)
+cache_one.set(1, 1)
+cache_one.set(2, 2)
+cache_one.set(4, 4)
 
-print("get(1): ", our_cache.get(1))      # returns 1
-print("get(2): ", our_cache.get(2))      # returns 2
-print("get(9): ", our_cache.get(9))      # returns -1 because 9 is not present in the cache
+print("get(1): ", cache_one.get(1))      # returns 1
+print("get(2): ", cache_one.get(2))      # returns 2
+print("get(9): ", cache_one.get(9))      # returns -1 because 9 is not present in the cache
 
-our_cache.set(5, 5)
-our_cache.set(6, 6)
+cache_one.set(5, 5)
+cache_one.set(6, 6)
 
-print("get(3): ", our_cache.get(3))      # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
+print("get(3): ", cache_one.get(3))      # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
+
+
+# Test Case 2: Cache Capacity 0
+cache_two = LRU_Cache(0)
+cache_two.set(1, 1)
+print("get(1): ", cache_two.get(1))      # returns -1 because cache capacity is 0
+
+
+# Test Case 3: Cache Capacity 1
+cache_three = LRU_Cache(1)
+cache_three.set(1, 1)
+cache_three.set(3, 3)
+
+print("get(1): ", cache_three.get(1))    # returns -1 because 1 was removed to make room for 3
+print("get(3): ", cache_three.get(3))    # returns 3
