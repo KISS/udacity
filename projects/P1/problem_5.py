@@ -40,17 +40,35 @@ class Blockchain:
       print("Current hash: {}, Previous hash {}".format(curr.hash, curr.previous_hash))
       curr = curr.next
 
-blockchain = Blockchain()
+# Test Case 1: Blockchain with 3 nodes
+print("Test Case 1: Blockchain with 3 nodes")
+blockchain_one = Blockchain()
 s1 = "Random message to insert in block"
-blockchain.insert(s1)
+blockchain_one.insert(s1)
 
 s2 = "Another random message to insert in block"
-blockchain.insert(s2)
+blockchain_one.insert(s2)
 
 s3 = "Final message to insert in block"
-blockchain.insert(s3)
+blockchain_one.insert(s3)
+
+blockchain_one.print() # prints values for 3 nodes
+
+
+# Test Case 2: Blockchain with 0 nodes
+print("\nTest Case 2: Blockchain with 0 nodes")
+blockchain_two = Blockchain()
+blockchain_two.print() # empty output
+
+
+# Test Case 3: Blockchain with 1 node
+print("\nTest Case 3: Blockchain with 1 node")
+blockchain_three = Blockchain()
 
 s4 = ""
-blockchain.insert(s4)
+blockchain_three.insert(s4) # inserting node with empty data value fails
 
-blockchain.print() # prints values for 3 nodes
+s5 = "Single node"
+blockchain_three.insert(s5)
+
+blockchain_three.print() # prints values for 1 node
