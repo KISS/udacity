@@ -1,2 +1,1 @@
-Write up an explanation for each question in a single separate text file, PDF or markdown called "explanation_1.md".
-Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning behind decisions made in the code. For example, why did you use that data structure? You also need to explain the efficiency (time and space) of your solution.
+The time complexity for sort_012() is O(n), where n is the number of elements in the input list. The space complexity is O(1) since the input list is sorted in-place.
