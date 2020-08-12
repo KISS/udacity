@@ -1,6 +1,6 @@
 def rearrange_digits(input_list):
   """
-  Rearrange Array Elements so as to form two number such that their sum is maximum.
+  Rearrange Array Elements so as to form two numbers such that their sum is maximized.
 
   Args:
     input_list(list): Input List
