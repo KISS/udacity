@@ -1,2 +1,1 @@
-Write up an explanation for each question in a single separate text file, PDF or markdown called "explanation_1.md".
-Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning behind decisions made in the code. For example, why did you use that data structure? You also need to explain the efficiency (time and space) of your solution.
+For this problem I use two variables to track the min and max values and update them as I iterate through the array. This allows for a time complexity of O(n) and a space complexity of O(1).
