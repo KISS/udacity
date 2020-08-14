@@ -1,2 +1,3 @@
-Write up an explanation for each question in a single separate text file, PDF or markdown called "explanation_1.md".
-Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning behind decisions made in the code. For example, why did you use that data structure? You also need to explain the efficiency (time and space) of your solution.
+For the Trie class the time complexity of the insert() and find() methods are O(n) where n is the length of the word for insert(), and the length of the prefix for find(). The space complexity for the insert() method is O(n), where n is the length of the word minus the characters that already exist in the Trie. The space complexity for the find() method is O(1).
+
+For the TrieNode class, the time and space complexity for the insert() method is O(1). The time complexity for the suffixes() method is O(n * depth), where n is the number of children a TrieNode has and depth is the length of the longest suffix we find. The space complexity is O(n) where n is the length of the longest suffix stored in the suffixes return list.
