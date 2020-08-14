@@ -33,5 +33,5 @@ print ("Pass" if ((-1, 200) == get_min_max(arr2)) else "Fail")
 arr3 = []
 print ("Pass" if (None == get_min_max(arr3)) else "Fail")
 
-arr3 = [2]
-print ("Pass" if ((2, 2) == get_min_max(arr3)) else "Fail")
+arr4 = [2]
+print ("Pass" if ((2, 2) == get_min_max(arr4)) else "Fail")
