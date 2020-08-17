@@ -7,7 +7,7 @@ def rearrange_digits(input_list):
   Returns:
     (int),(int): Two maximum sums
   """
-  if not input_list:
+  if len(input_list) < 2:
     return input_list
 
   # sort list in-place
@@ -74,4 +74,6 @@ test_function([[1, 2, 3, 4, 5], [531, 42]])
 test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
 test_function([[4, 2, 8], [84, 2]])
 test_function([[9, 9], [9, 9]])
+test_function([[2, 1], [1, 2]])
+test_function([[1], [1]])
 test_function([[], []])
