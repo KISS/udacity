@@ -23,4 +23,4 @@ Part 4: Advanced Algorithms
 
 ## Certificate of Completion
 
-![Certificate of Completion](/certificate_of_completion.pdf)
+![Certificate of Completion](certificate_of_completion.png)
