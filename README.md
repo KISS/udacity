@@ -19,7 +19,7 @@ Part 3: Basic Algorithms
 Part 4: Advanced Algorithms
   - Learned depth-first search, breadth-first search, Dijkstras Algorithm, Prim's Algorithm, and A* Search
   - Learned about dynamic programming techniques
-  - Project: [Show Me the Data Structures](/projects/P3_route_planner)
+  - Project: [Route Planner](/projects/P3_route_planner)
 
 ## Certificate of Completion
 
